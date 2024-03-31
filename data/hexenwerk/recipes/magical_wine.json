@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:command_block"
+      },
+      {
+        "item": "minecraft:command_block"
+      },
+      {
+        "item": "minecraft:command_block"
+      }
+    ],
+    "result": {
+      "id": "minecraft:honey_bottle",
+      "components": {
+        "item_name": "{'translate': 'item.hexenwerk.wine','fallback': 'Magical Wine Bottle','color': '#62DEDE'}",
+        "max_stack_size":1,
+        "minecraft:custom_model_data": 5842001,
+        "custom_data": {"hexenwerk":{"id":"wine","version":1}},
+        "minecraft:food": {
+          "nutrition": 9,
+          "saturation_modifier": 4,
+          "can_always_eat": false,
+          "eat_seconds": 1.6
+      }
+    }
+  }
+}

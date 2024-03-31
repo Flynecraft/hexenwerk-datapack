@@ -1,0 +1,166 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:command_block",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "target": "item_name",
+                "name": {
+                  "translate": "item.hexenwerk.berries",
+                  "fallback": "Magical Berries",
+
+                  "color": "#62DEDE"
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:block_entity_data":{"Command":"setblock ~ ~ ~ air","auto":true,"id":"minecraft:command_block"},
+                  "minecraft:custom_model_data": 5842001,
+                  "minecraft:food": {
+                    "nutrition": 4,
+                    "saturation_modifier": 1.8,
+                    "can_always_eat": false,
+                    "eat_seconds": 0.7,
+                    "effects": [
+                      {
+                        "effect": {
+                          "id": "minecraft:speed",
+                          "amplifier": 4,
+                          "duration": 100,
+                          "show_particles": true
+                        },
+                        "probability": 0.075
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:glowing",
+                          "amplifier": 0,
+                          "duration": 170,
+                          "show_particles": true
+                        },
+                        "probability": 0.4
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:invisibility",
+                          "amplifier": 0,
+                          "duration": 260,
+                          "show_particles": true
+                        },
+                        "probability": 0.05
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:nausea",
+                          "amplifier": 0,
+                          "duration": 200,
+                          "show_particles": true
+                        },
+                        "probability": 0.2
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:infested",
+                          "amplifier": 0,
+                          "duration": 24000,
+                          "show_particles": true
+                        },
+                        "probability": 0.075
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:oozing",
+                          "amplifier": 0,
+                          "duration": 24000,
+                          "show_particles": true
+                        },
+                        "probability": 0.075
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:levitation",
+                          "amplifier": 9,
+                          "duration": 20,
+                          "show_particles": true
+                        },
+                        "probability": 0.1
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:haste",
+                          "amplifier": 4,
+                          "duration": 100,
+                          "show_particles": true
+                        },
+                        "probability": 0.03
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:strength",
+                          "amplifier": 2,
+                          "duration": 120,
+                          "show_particles": true
+                        },
+                        "probability": 0.06
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:absorption",
+                          "amplifier": 2,
+                          "duration": 400
+                        },
+                        "probability": 0.09
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:wither",
+                          "amplifier": 0,
+                          "duration": 200,
+                          "show_particles": true
+                        },
+                        "probability": 0.05
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:jump_boost",
+                          "amplifier": 2,
+                          "duration": 260
+                        },
+                        "probability": 0.1
+                      },
+                      {
+                        "effect": {
+                          "id": "minecraft:weakness",
+                          "amplifier": 1,
+                          "duration": 300
+                        },
+                        "probability": 0.075
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{hexenwerk:{id:\"berries\",version:1}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
