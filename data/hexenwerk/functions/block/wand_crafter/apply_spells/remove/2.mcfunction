@@ -1,0 +1,2 @@
+data modify block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[1] set value {slot:2}
+data modify block ~ ~ ~ Items[{Slot:12b}].components."minecraft:lore"[1] set value '{"text":"• None","color":"gray","italic":false}'

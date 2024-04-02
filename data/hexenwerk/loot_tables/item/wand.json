@@ -1,59 +1,60 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:warped_fungus_on_a_stick",
-            "functions": [
-              {
-                "function": "minecraft:set_lore",
-                "entity": "this",
-                "lore": [
-                  {
-                    "translate": "text.hexenwerk.no_spell",
-                    "fallback": "• None",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "translate": "text.hexenwerk.no_spell",
-                    "fallback": "• None",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "translate": "text.hexenwerk.no_spell",
-                    "fallback": "• None",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ]
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": {
-                  "translate": "item.hexenwerk.wand",
-                  "fallback": "Magical Wand",
-                  "color": "#62DEDE",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "text.hexenwerk.no_spell",
+                  "fallback": "• None",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "text.hexenwerk.no_spell",
+                  "fallback": "• None",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "text.hexenwerk.no_spell",
+                  "fallback": "• None",
+                  "color": "gray",
                   "italic": false
                 }
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "minecraft:custom_model_data": 5842001
-                }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{wand_crafter_input_item:1b,hexenwerk:{id:\"wand\",version:1,spell_storage:[{},{},{},{},{}]}}"
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "target":"item_name",
+              "name": {
+                "translate": "item.hexenwerk.wand",
+                "fallback": "Magical Wand",
+                "color": "#62DEDE",
+                "italic": false
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 5842001
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{wand_crafter_input_item:1b,hexenwerk:{id:\"wand\",version:1,spell_storage:[{slot:1},{slot:2},{slot:3},{slot:4},{slot:5}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,2 @@
 function hexenwerk:block/wand_crafter/return_item_to_player/24
-item replace block ~ ~ ~ container.24 with barrier[minecraft:custom_model_data=5842001,custom_name='{"translate":"gui.hexenwerk.add_spellbook","fallback":"Add Spellbook","color":"white","italic":false}']{hexenwerk:{input_slot:1b}}
+item replace block ~ ~ ~ container.24 with barrier[minecraft:custom_model_data=5842001,custom_name='{"translate":"gui.hexenwerk.add_spellbook","fallback":"Add Spellbook","color":"white","italic":false}',custom_data={hexenwerk:{input_slot:1b, kill_me:1b}}]

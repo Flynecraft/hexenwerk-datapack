@@ -13,7 +13,7 @@
                 "entity": "this",
                 "lore": [
                   {
-                    "text": "Ardo",
+                    "text": "Unset",
                     "italic": false,
                     "color": "gray"
                   }
@@ -32,7 +32,7 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:custom_model_data": 5842001,
+                  "minecraft:custom_model_data": 5842000,
                   "minecraft:dyed_color": {"rgb":15461355, "show_in_tooltip": false},
                   "minecraft:hide_additional_tooltip": {},
                   "minecraft:attribute_modifiers": {"modifiers": [],"show_in_tooltip": false}
@@ -40,7 +40,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{hexenwerk:{wand_crafter_input_item:1b,id:\"spell_book\",version:1,spell_data:{name:\"Ardo\", version: 1, id: \"ardo\", book_color: 15461355, book_hex_color:\"FFFFFF\", book_cmd:5842001, mana_cost: 20, speed: 10, book_lore: '{\"text\":\"Ardo\",\"color\":\"gray\",\"italic\":false}', lore_display: '{\"text\":\"• Ardo\",\"color\":\"gray\",\"italic\":false}',chat_display: '{\"text\":\"Ardo\",\"color\":\"#62DEDE\",\"italic\":false}',start_raycast: true,events:{on_block_collision: \"function hexenwerk:wand/spells/ardo/block_impact\",on_entity_collision:{as_player: \"\",as_target: \"function hexenwerk:wand/spells/ardo/entity_impact\"},on_cast: \"\",on_raycast_travel: \"execute if predicate hexenwerk:percent/20 run particle flame ^ ^ ^-0.1 0 0 0 0 1 force @a[tag=!hexenwerk.hide_spell_particles]\"},hud_display:{book_hex:\"#FFFFFF\",name:\"Ardo\",custom_icon:{char:\"c\",font:\"hexenwerk:spell_display_icons\"}}}}}"
+                "tag": "{hexenwerk:{wand_crafter_input_item:1b,id:\"spell_book\",version:1,spell_data:{}}}"
               }
             ]
           }

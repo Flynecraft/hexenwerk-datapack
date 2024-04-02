@@ -1,0 +1,1 @@
+data modify block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[4] set value {}

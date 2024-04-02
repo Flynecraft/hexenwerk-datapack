@@ -1,0 +1,2 @@
+data modify block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[2] set from block ~ ~ ~ Items[{Slot:24b}].components."minecraft:custom_data".hexenwerk.spell_data
+data modify block ~ ~ ~ Items[{Slot:12b}].components."minecraft:lore"[2] set from block ~ ~ ~ Items[{Slot:24b}].components."minecraft:custom_data".hexenwerk.spell_data.lore_display

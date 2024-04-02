@@ -1,0 +1,36 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "item_name": "{'translate': 'item.hexenwerk.wine','fallback': 'Mulberry Wine','color': '#62DEDE'}",
+                  "lore": ["{'translate': 'potion.hexenwerk.instant_mana','fallback':'Instant Mana','color': 'blue','italic':false}"],
+                  "hide_additional_tooltip":{},
+                  "max_stack_size":4,
+                  "minecraft:custom_model_data": 5842001,
+                  "custom_data": {"hexenwerk":{"id":"mulberry_wine","version":1}},
+                  "minecraft:food": {
+                    "nutrition": 9,
+                    "saturation_modifier": 4,
+                    "can_always_eat": false,
+                    "eat_seconds": 90
+                  },
+                  "potion_contents":{
+                    "potion_color": 255
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

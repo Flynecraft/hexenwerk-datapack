@@ -1,4 +1,4 @@
-kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data": {hexenwerk: {input_slot: 1b}}}}}]
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data": {hexenwerk: {kill_me: 1b}}}}}]
 
 execute as @a[tag=hexenwerk.watch.scroll_hotbar] store result score @s hexenwerk.hotbar.selected_slot run data get entity @s SelectedItemSlot
 
@@ -21,3 +21,6 @@ execute as @a[scores={hexenwerk.used.wfoas=1..}] run function hexenwerk:event/it
 execute as @a run title @s actionbar [{"score":{"name":"@s","objective":"hexenwerk.mana"},"color":"dark_aqua"},{"text": " (","color": "white"},{"score":{"name":"@s","objective":"hexenwerk.mana.max_modifier"},"color":"aqua"},{"text": "/","color": "white"},{"score":{"name":"@s","objective":"hexenwerk.mana.regen_modifier"},"color":"aqua"},{"text": ")","color": "white"}]
 
 execute as @a[tag=hexenwerk.watch.scroll_hotbar] store result score @s hexenwerk.hotbar.selected_slot_old run data get entity @s SelectedItemSlot
+
+# VVV REMOVE TAGS
+tag @a remove hexenwerk.tick.recieved_inv_update_event

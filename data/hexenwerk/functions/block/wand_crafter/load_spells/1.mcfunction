@@ -1,0 +1,6 @@
+item replace block ~ ~ ~ container.6 with leather_horse_armor[custom_data={hexenwerk:{wand_crafter_input_item:1b,id:"spell_book",version:1,spell_data:{}}},dyed_color={rgb:15461355, show_in_tooltip: false},item_name='{"translate":"item.hexenwerk.spell_book","fallback":"Spellbook","color":"#62DEDE","italic":false}',lore=['{"text": "Unset","italic": false,"color": "gray"}'],attribute_modifiers={modifiers:[],show_in_tooltip:false}]
+
+data modify block ~ ~ ~ Items[{Slot:6b}].components."minecraft:lore"[0] set from block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[0].book_lore
+data modify block ~ ~ ~ Items[{Slot:6b}].components."minecraft:dyed_color".rgb set from block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[0].book_color
+data modify block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_model_data" set from block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[0].book_cmd
+data modify block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".hexenwerk.spell_data set from block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[0]

@@ -1,4 +1,4 @@
-setblock ~ ~ ~ barrel{CustomName:'{"translate":"block.hexenwerk.wand_crafter","fallback":"Wand Crafter"}'}
+setblock ~ ~ ~ barrel{CustomName:'{"translate":"text.hexenwerk.apply_spells","fallback":"             Apply Spells"}'}
 execute align xyz run summon item_display ~0.5 ~0.5 ~0.5 {brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.001f,1.001f,1.001f]},Tags:["hexenwerk.block","hexenwerk.block.type.wand_crafter","hexenwerk.block.gui"],item:{id:"minecraft:glow_item_frame",count:1,components:{"minecraft:custom_model_data":5842002}}}
 function hexenwerk:block/wand_crafter/fill_gui
 function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/start
