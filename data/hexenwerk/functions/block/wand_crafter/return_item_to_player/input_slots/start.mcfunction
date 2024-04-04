@@ -1,7 +1,7 @@
 tag @s add hexenwerk.this
-execute unless block ~ ~ ~ barrel{Items:[{Slot:6b,components:{"minecraft:custom_data":{hexenwerk:{id:"spell_book"}}}}]} unless block ~ ~ ~ barrel{Items:[{Slot:6b,components:{"minecraft:custom_data":{hexenwerk:{input_slot:1b, kill_me:1b}}}}]} run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/6
-execute unless block ~ ~ ~ barrel{Items:[{Slot:12b,components:{"minecraft:custom_data":{hexenwerk:{id:"wand"}}}}]} unless block ~ ~ ~ barrel{Items:[{Slot:12b,components:{"minecraft:custom_data":{hexenwerk:{input_slot:1b, kill_me:1b}}}}]} run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/12
-execute unless block ~ ~ ~ barrel{Items:[{Slot:15b,components:{"minecraft:custom_data":{hexenwerk:{id:"spell_book"}}}}]} unless block ~ ~ ~ barrel{Items:[{Slot:15b,components:{"minecraft:custom_data":{hexenwerk:{input_slot:1b, kill_me:1b}}}}]} run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/15
-execute unless block ~ ~ ~ barrel{Items:[{Slot:24b,components:{"minecraft:custom_data":{hexenwerk:{id:"spell_book"}}}}]} unless block ~ ~ ~ barrel{Items:[{Slot:24b,components:{"minecraft:custom_data":{hexenwerk:{input_slot:1b, kill_me:1b}}}}]} run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/24
+
+execute as @e[type=item_display,tag=hexenwerk.block.gui,tag=hexenwerk.block.gui.open] at @s if entity @s[tag=hexenwerk.block.wand_crafter.has_wand] run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/if_wand
+execute as @e[type=item_display,tag=hexenwerk.block.gui,tag=hexenwerk.block.gui.open] at @s if entity @s[tag=!hexenwerk.block.wand_crafter.has_wand] run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/if_no_wand
+
 tag @s remove hexenwerk.this
 clear @s barrier[custom_data={hexenwerk:{input_slot:1b, kill_me:1b}}]

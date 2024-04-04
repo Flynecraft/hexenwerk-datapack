@@ -1,0 +1,6 @@
+#execute if data block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[{slot:1}] run item replace block ~ ~ ~ container.6 with barrier[minecraft:custom_model_data=5842001,custom_name='{"translate":"gui.hexenwerk.add_spellbook","fallback":"Add Spellbook","color":"white","italic":false}',custom_data={hexenwerk:{input_slot:1b, kill_me:1b}}]
+execute if data block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[{slot:2}] run item replace block ~ ~ ~ container.15 with barrier[minecraft:custom_model_data=5842001,custom_name='{"translate":"gui.hexenwerk.add_spellbook","fallback":"Add Spellbook","color":"white","italic":false}',custom_data={hexenwerk:{input_slot:1b, kill_me:1b}}]
+execute if data block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.spell_storage[{slot:3}] run item replace block ~ ~ ~ container.24 with barrier[minecraft:custom_model_data=5842001,custom_name='{"translate":"gui.hexenwerk.add_spellbook","fallback":"Add Spellbook","color":"white","italic":false}',custom_data={hexenwerk:{input_slot:1b, kill_me:1b}}]
+
+item replace block ~ ~ ~ container.17 with barrier[minecraft:custom_model_data=5842003,custom_name='{"text":""}',custom_data={hexenwerk:{gui_element:1b, kill_me:1b}},hide_tooltip={}]
+

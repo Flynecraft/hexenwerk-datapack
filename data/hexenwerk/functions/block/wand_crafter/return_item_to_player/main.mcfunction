@@ -29,4 +29,5 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:25b}]} unless block ~ ~ ~ barrel{Item
 execute if block ~ ~ ~ barrel{Items:[{Slot:26b}]} unless block ~ ~ ~ barrel{Items:[{Slot:26b,id:"minecraft:barrier",components:{"minecraft:custom_data":{hexenwerk:{gui_element:1b, kill_me:1b}}}}]} run function hexenwerk:block/wand_crafter/return_item_to_player/26
 execute if block ~ ~ ~ barrel{Items:[{Slot:27b}]} unless block ~ ~ ~ barrel{Items:[{Slot:27b,id:"minecraft:barrier",components:{"minecraft:custom_data":{hexenwerk:{gui_element:1b, kill_me:1b}}}}]} run function hexenwerk:block/wand_crafter/return_item_to_player/27
 
-function hexenwerk:block/wand_crafter/fill_gui
+execute if entity @s[tag=hexenwerk.block.wand_crafter.plz_fill_gui] run function hexenwerk:block/wand_crafter/fill_gui
+tag @s remove hexenwerk.block.wand_crafter.plz_fill_gui

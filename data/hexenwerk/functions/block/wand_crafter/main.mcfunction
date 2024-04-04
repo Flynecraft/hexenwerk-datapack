@@ -1,10 +1,12 @@
 tag @s remove hexenwerk.block.wand_crafter.block_appliance_1t
-execute if items block ~ ~ ~ container.12 minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{hexenwerk:{id:"wand"}}] unless data block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.uuid run function hexenwerk:block/wand_crafter/assign_wand_uuid
+execute if items block ~ ~ ~ container.12 minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{hexenwerk:{id:"wand"}}] if entity @s[tag=!hexenwerk.block.wand_crafter.has_wand] run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/add_wand
 
-execute store result score @s hexenwerk.block.wand_crafter.wand_uuid run data get block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.uuid
+execute if items block ~ ~ ~ container.12 minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{hexenwerk:{id:"wand"}}] run function hexenwerk:block/wand_crafter/if_wand
 
-execute unless score @s hexenwerk.block.wand_crafter.wand_uuid.old = @s hexenwerk.block.wand_crafter.wand_uuid run function hexenwerk:block/wand_crafter/wand_change
+execute unless items block ~ ~ ~ container.12 minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{hexenwerk:{id:"wand"}}] run function hexenwerk:block/wand_crafter/unless_wand
 
-execute store result score @s hexenwerk.block.wand_crafter.wand_uuid.old run data get block ~ ~ ~ Items[{Slot:12b}].components."minecraft:custom_data".hexenwerk.uuid
+execute unless items block ~ ~ ~ container.12 minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{hexenwerk:{id:"wand"}}] if entity @s[tag=hexenwerk.block.wand_crafter.has_wand] run function hexenwerk:block/wand_crafter/return_item_to_player/input_slots/remove_wand
 
-execute if items block ~ ~ ~ container.12 minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{hexenwerk:{id:"wand"}}] unless entity @s[tag=hexenwerk.block.wand_crafter.block_appliance_1t] run function hexenwerk:block/wand_crafter/apply_spells/main 
+execute unless items block ~ ~ ~ container.12 minecraft:warped_fungus_on_a_stick[minecraft:custom_data~{hexenwerk:{id:"wand"}}] run tag @s remove hexenwerk.block.wand_crafter.has_wand
+
+execute unless entity @a[distance=..6] run function hexenwerk:block/wand_crafter/close
